@@ -1,0 +1,66 @@
+Random rn = new Random();
+	
+	int rock = 1;
+	int paper = 2;
+	int scissors=3;
+	for(int i= 0;i<4;i++)
+	{
+	System.out.println("\nEnter the number: \n1.for Rock\n2.for Paper"
+			+ "\n3.for Scissors \n0.for exit");
+	int useri=sc.nextInt();
+	int compi=rn.nextInt(3);
+	/**********************/
+	
+	 if(useri==rock)
+	 {
+		if (compi==rock)
+		{
+			System.out.println("computer=rock\nRock vs Rock ,, tie");
+		}
+		else if(compi==paper)
+		{
+			System.out.println("computer=paper\nROck vs paper ,, computer won");
+		}
+		else
+		{
+			System.out.println("computer=scissors\nRock vs scissors,, i won");
+		}
+	}
+	
+	if(useri==paper)
+	{
+		if (compi==paper)
+		{
+			System.out.println("computer=paper\npaper vs paper ,, tie");
+		}
+		else if(compi==rock)
+		{
+			System.out.println("computer=rock\nROck vs paper ,, I  won");
+		}
+		else
+		{
+			System.out.println("computer=scissors\npaper  vs scissor,, computer won");
+		}
+	}
+	
+	if(useri==scissors)
+	{
+		if (compi==scissors)
+		{
+			System.out.println("computer=scissors\nscissors vs scissors ,, tie");
+		}
+		else if(compi==paper)
+		{
+			System.out.println("computer=paper\nscissors vs paper ,, i won");
+		}
+		else
+		{
+			System.out.println("computer=rock\nRock vs scissors,, computer  won");
+		}
+	 }
+	}
+	
+	
+	
+	
+	
